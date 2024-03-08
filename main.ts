@@ -5,7 +5,7 @@ namespace mintspark {
      */
 
     //% weight=88
-    //% blockId=setMotorSpeed block="Set motor %motor speed to %speed\\%"
+    //% block="Set motor %motor speed to %speed\\%"
     //% group="Motor"
     //% speed.min=-100 speed.max=100
     export function setMotorSpeed(motor: neZha.MotorList, speed: number): void {
@@ -13,13 +13,13 @@ namespace mintspark {
     }
 
     //% weight=86
-    //% blockId=stopMotor block="Stop motor %motor"
+    //% block="Stop motor %motor"
     export function stopMotor(motor: neZha.MotorList): void {
         setMotorSpeed(motor, 0)
     }
 
     //% weight=85
-    //% blockId=stopAllMotor  block="Stop all motor"
+    //%   block="Stop all motor"
     export function stopAllMotor(): void {
         setMotorSpeed(neZha.MotorList.M1, 0)
         setMotorSpeed(neZha.MotorList.M2, 0)
@@ -29,7 +29,7 @@ namespace mintspark {
 
     //% weight=84
     //% group="Servo"
-    //% blockId=setServoAngle block="Set %servoType servo %servo angle to %angle°"
+    //% block="Set %servoType servo %servo angle to %angle°"
     //% color=#E63022
     export function setServoAngel(servo: neZha.ServoList, angel: number): void {
         neZha.setServoAngel(neZha.ServoTypeList._360, servo, angel);
@@ -39,7 +39,7 @@ namespace mintspark {
      * PlanetX Sensors
      */
 
-    //% blockId=sonarbit block="Ultrasonic sensor %Rjpin distance %distance_unit"
+    //% block="Ultrasonic sensor %Rjpin distance %distance_unit"
     //% group="Sensor"
     //% Rjpin.fieldEditor="gridpicker"
     //% Rjpin.fieldOptions.columns=2
@@ -54,12 +54,12 @@ namespace mintspark {
     //% Rjpin.fieldOptions.columns=2
     //% group="Sensor"
     //% color=#EA5532
-    //% blockId=tracking_sensor block="Line-tracking sensor %Rjpin is %state"
+    //% block="Line-tracking sensor %Rjpin is %state"
     export function trackingSensor(Rjpin: PlanetX_Basic.DigitalRJPin, state: PlanetX_Basic.TrackingStateType): boolean {
         return PlanetX_Basic.trackingSensor(Rjpin, state);
     }
 
-    //% blockId="potentiometer" block="Trimpot %Rjpin analog value"
+    //% block="Trimpot %Rjpin analog value"
     //% Rjpin.fieldEditor="gridpicker"
     //% Rjpin.fieldOptions.columns=2
     //% color=#EA5532 group="Sensor"
@@ -67,7 +67,7 @@ namespace mintspark {
         return PlanetX_Basic.trimpot(Rjpin);
     }
 
-    //% blockId="readsoilmoisture" block="Soil moisture sensor %Rjpin value(0~100)"
+    //% block="Soil moisture sensor %Rjpin value(0~100)"
     //% Rjpin.fieldEditor="gridpicker"
     //% Rjpin.fieldOptions.columns=2
     //% color=#EA5532 group="Sensor"
@@ -75,12 +75,12 @@ namespace mintspark {
         return PlanetX_Basic.soilHumidity(Rjpin);
     }
 
-    //% blockId=apds9960_readcolor 
     //% block="Color sensor IIC port color HUE(0~360)"
     //% group="Sensor" color=#EA5532
-    export function readColor(): number {
-        return PlanetX_Basic.readColor();
-    }
+
+    //%export function readColor(): number {
+    //%    return PlanetX_Basic.readColor();
+    //%}
 
     //% block="Color sensor IIC port detects %color"
     //% group="Sensor" color=#EA5532
@@ -89,7 +89,7 @@ namespace mintspark {
         return  PlanetX_Basic.checkColor(color);
     }
 
-    //% blockId=Crash block="Crash Sensor %Rjpin is pressed"
+    //% block="Crash Sensor %Rjpin is pressed"
     //% Rjpin.fieldEditor="gridpicker"
     //% Rjpin.fieldOptions.columns=2
     //% group="Sensor" color=#EA5532 
@@ -101,7 +101,7 @@ namespace mintspark {
      * PlanetX Output
      */
 
-    //% blockId=LED block="LED %Rjpin toggle to $ledstate || brightness %brightness \\%"
+    //% block="LED %Rjpin toggle to $ledstate || brightness %brightness \\%"
     //% Rjpin.fieldEditor="gridpicker" Rjpin.fieldOptions.columns=2
     //% brightness.min=0 brightness.max=100
     //% ledstate.shadow="toggleOnOff"
