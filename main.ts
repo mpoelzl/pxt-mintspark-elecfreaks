@@ -16,4 +16,13 @@ namespace mintspark {
     export function ultrasoundSensor(Rjpin: PlanetX_Basic.DigitalRJPin, distance_unit: PlanetX_Basic.Distance_Unit_List): number {
         return PlanetX_Basic.ultrasoundSensor(Rjpin, distance_unit);
     }
+    
+    
+    //% Rjpin.fieldEditor="gridpicker"
+    //% Rjpin.fieldOptions.columns=2
+    //% subcategory=Sensor group="Digital" color=#EA5532
+    //% blockId=tracking_sensor block="Line-tracking sensor %Rjpin is %state"
+    export function trackingSensor(Rjpin: PlanetX_Basic.DigitalRJPin, state: PlanetX_Basic.TrackingStateType): boolean {
+        return PlanetX_Basic.trackingSensor(Rjpin, state);
+    }
 }
