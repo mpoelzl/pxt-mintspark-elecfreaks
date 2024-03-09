@@ -1,3 +1,16 @@
 {
-
+	"setMotorSpeed|block": "Setze motor %motor Geschwindigkeit auf %speed\\%",
+	"stopMotor|block": "Stoppe Motor %motor",
+	"stopAllMotor|block": "Stoppe alle Motoren",
+	"ultrasoundSensor|block": "Drehe Servo %servo auf Winkel %angle°",
+	"trackingSensor|block": "Linenverfolgungs-Sensor %Rjpin sieht %state",
+	"trimpot|block": block="Trimpot %Rjpin analog Wert",
+	"soilHumidity|block": "Bodenfeuchte-Sensor %Rjpin Wert(0~100)",
+	"readColor|block": "Farbsensor Farbwert (0~360)",
+	"checkColor|block": "Farbsensor sieht %color",
+	"Crash|block": "Crash Sensor %Rjpin ist gedrückt",
+	"ledBrightness|block": "Schalte LED %Rjpin auf $ledstate || Helligkeit %brightness \\%",
+	"{id:category}Motor": "Motor",
+	"{id:category}Servo": "Servo",
+	"{id:category}Output": "Ausgabe"
 }
