@@ -1,4 +1,0 @@
-{
-  "mintspark.stopMotor|block": "Setze motor %motor Geschwindigkeit auf %speed",
-  "{id:category}Motor": "Motor"
-}
