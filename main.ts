@@ -29,7 +29,7 @@ namespace mintspark {
 
     //% weight=84
     //% group="Servo"
-    //% block="Set %servoType servo %servo angle to %angle°"
+    //% block="Set servo %servo angle to %angle°"
     //% color=#E63022
     export function setServoAngel(servo: neZha.ServoList, angel: number): void {
         neZha.setServoAngel(neZha.ServoTypeList._360, servo, angel);
