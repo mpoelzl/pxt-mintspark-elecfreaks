@@ -11,7 +11,8 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+		"_locales/de/pxt-MINTspark-elecfreaks-strings.json"
     ],
     "testFiles": [
         "test.ts"
