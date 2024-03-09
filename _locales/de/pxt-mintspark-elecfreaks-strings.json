@@ -1,5 +1,5 @@
-{
-  "mintspark.setMotorSpeed|block": "Setze motor %motor Geschwindigkeit auf %speed\\%",
+ {
+  "setMotorSpeed|block": "Setze motor %motor Geschwindigkeit auf %speed\\%",
   "mintspark.stopMotor|block": "Stoppe Motor %motor",
   "mintspark.stopAllMotor|block": "Stoppe alle Motoren",
   "mintspark.ultrasoundSensor|block": "Drehe Servo %servo auf Winkel %angle°",
